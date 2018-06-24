@@ -1,0 +1,52 @@
+//node-sass
+//////////
+$base: #777777;
+.sidebar{
+    border: 1px solid $base;
+    p{
+        color: $base
+    }
+}
+
+.content{
+    border: 1px solid black;
+    padding: 20px;
+    h2{
+        font-size:2px;
+        margin: 20px 0;
+    }
+    p{
+        font-size: 5px;
+        margin: 15px 0;
+    }
+}
+
+///
+.btn{
+    text: {
+        decoration:underline;
+        transform: lowercase;
+    }
+}
+
+.content{
+    border: 1px solid  #ccc;
+    padding:20px;
+    .callout{
+        border-color:red;
+    }
+    &.callout{
+        border-color:green;
+    }
+
+}
+
+@mixin button{
+    border: 1px solid black;
+    font-size: 10px;
+}
+
+.btn-a{
+    @include button;
+    background: #777
+}
